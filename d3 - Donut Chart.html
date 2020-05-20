@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8">
+<head><meta charset="utf-8" />
 
 <title>d3 - Donut Chart</title>
 
@@ -13076,7 +13076,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [15]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13093,14 +13093,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [16]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span>
 <span class="nx">require</span><span class="p">.</span><span class="nx">config</span><span class="p">({</span>
     <span class="nx">paths</span><span class="o">:</span> <span class="p">{</span>
-        <span class="nx">d3</span><span class="o">:</span> <span class="s1">'https://d3js.org/d3.v5.min'</span><span class="p">,</span>
-        <span class="nx">d3_time</span><span class="o">:</span><span class="s1">'https://d3js.org/d3-time.v1.min'</span>
+        <span class="nx">d3</span><span class="o">:</span> <span class="s1">&#39;https://d3js.org/d3.v5.min&#39;</span><span class="p">,</span>
+        <span class="nx">d3_time</span><span class="o">:</span><span class="s1">&#39;https://d3js.org/d3-time.v1.min&#39;</span>
     <span class="p">}</span>
 <span class="p">});</span>
 </pre></div>
@@ -13121,10 +13121,10 @@ div#notebook {
 
 
 
-<div id="4f272084-e2c3-401a-8472-6d2119b9d258"></div>
+<div id="c6f14168-2bec-4c67-93ae-1fffa81e138b"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#4f272084-e2c3-401a-8472-6d2119b9d258');
+var element = $('#c6f14168-2bec-4c67-93ae-1fffa81e138b');
 require.config({
     paths: {
         d3: 'https://d3js.org/d3.v5.min',
@@ -13143,7 +13143,7 @@ require.config({
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [10]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">store</span> -r data
@@ -13156,7 +13156,7 @@ require.config({
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [11]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13172,7 +13172,7 @@ require.config({
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13340,11 +13340,11 @@ require.config({
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [14]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">donut_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">'Week_index'</span><span class="p">,</span> <span class="s1">'payable_price'</span><span class="p">,</span> <span class="s1">'cost_total'</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'Week_index'</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="n">donut_data</span><span class="p">[</span><span class="s1">'profit_ratio'</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">donut_data</span><span class="p">[</span><span class="s1">'payable_price'</span><span class="p">]</span><span class="o">-</span><span class="n">donut_data</span><span class="p">[</span><span class="s1">'cost_total'</span><span class="p">])</span><span class="o">/</span><span class="n">donut_data</span><span class="p">[</span><span class="s1">'payable_price'</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">donut_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;Week_index&#39;</span><span class="p">,</span> <span class="s1">&#39;payable_price&#39;</span><span class="p">,</span> <span class="s1">&#39;cost_total&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Week_index&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">donut_data</span><span class="p">[</span><span class="s1">&#39;profit_ratio&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">donut_data</span><span class="p">[</span><span class="s1">&#39;payable_price&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">donut_data</span><span class="p">[</span><span class="s1">&#39;cost_total&#39;</span><span class="p">])</span><span class="o">/</span><span class="n">donut_data</span><span class="p">[</span><span class="s1">&#39;payable_price&#39;</span><span class="p">]</span>
 <span class="n">donut_data</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">donut_data</span>
 </pre></div>
@@ -13359,7 +13359,7 @@ require.config({
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13437,10 +13437,10 @@ require.config({
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [17]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataJsonList</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">'week_index'</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s1">'profit_ratio'</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">]}</span><span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="n">donut_data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">()]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataJsonList</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;week_index&#39;</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;profit_ratio&#39;</span><span class="p">:</span><span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">]}</span><span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="n">donut_data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">()]</span>
 </pre></div>
 
     </div>
@@ -13450,7 +13450,7 @@ require.config({
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [18]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataJsonList</span>
@@ -13466,17 +13466,17 @@ require.config({
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[{'week_index': 'Week17', 'profit_ratio': 0.4184785437379801},
- {'week_index': 'Week18', 'profit_ratio': 0.4215532769693594},
- {'week_index': 'Week19', 'profit_ratio': 0.4420048774028346},
- {'week_index': 'Week20', 'profit_ratio': 0.47381724964717653},
- {'week_index': 'Week21', 'profit_ratio': 0.49133095079181366}]</pre>
+<pre>[{&#39;week_index&#39;: &#39;Week17&#39;, &#39;profit_ratio&#39;: 0.4184785437379801},
+ {&#39;week_index&#39;: &#39;Week18&#39;, &#39;profit_ratio&#39;: 0.4215532769693594},
+ {&#39;week_index&#39;: &#39;Week19&#39;, &#39;profit_ratio&#39;: 0.4420048774028346},
+ {&#39;week_index&#39;: &#39;Week20&#39;, &#39;profit_ratio&#39;: 0.47381724964717653},
+ {&#39;week_index&#39;: &#39;Week21&#39;, &#39;profit_ratio&#39;: 0.49133095079181366}]</pre>
 </div>
 
 </div>
@@ -13488,7 +13488,7 @@ require.config({
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Circle---SVG">Circle - SVG<a class="anchor-link" href="#Circle---SVG">¶</a></h4><p>Attributes of Circle:</p>
+<h4 id="Circle---SVG">Circle - SVG<a class="anchor-link" href="#Circle---SVG">&#182;</a></h4><p>Attributes of Circle:</p>
 <ul>
 <li>cx</li>
 <li>cy</li>
@@ -13508,16 +13508,16 @@ require.config({
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [20]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span>
-<span class="sd">"""</span>
-<span class="sd">&lt;svg height="100" width="100"&gt;</span>
-<span class="sd">  &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;</span>
+<span class="sd">  &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;40&quot; stroke=&quot;black&quot; stroke-width=&quot;3&quot; fill=&quot;red&quot; /&gt;</span>
 <span class="sd">&lt;/svg&gt;</span>
 
-<span class="sd">"""</span>
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="p">)</span>
 </pre></div>
 
@@ -13531,14 +13531,14 @@ require.config({
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
 <svg height="100" width="100">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"></circle>
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
 </svg>
 
 
@@ -13552,57 +13552,57 @@ require.config({
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [82]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Javascript</span><span class="p">(</span>
 
-<span class="sd">"""</span>
-<span class="sd">    require(['d3'],function(d3){</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    require([&#39;d3&#39;],function(d3){</span>
 <span class="sd">    </span>
 <span class="sd">        var data = %s</span>
 <span class="sd">        </span>
 <span class="sd">        var svg_height = 360</span>
 <span class="sd">        var svg_width = 360</span>
 <span class="sd">        </span>
-<span class="sd">        var svg = d3.select(element.get(0)).append('svg')</span>
-<span class="sd">                    .attr('height', svg_height)</span>
-<span class="sd">                    .attr('width', svg_width)</span>
+<span class="sd">        var svg = d3.select(element.get(0)).append(&#39;svg&#39;)</span>
+<span class="sd">                    .attr(&#39;height&#39;, svg_height)</span>
+<span class="sd">                    .attr(&#39;width&#39;, svg_width)</span>
 <span class="sd">        </span>
-<span class="sd">        var circles = svg.append('g').selectAll('circle').data(data).enter()</span>
-<span class="sd">                         .append('circle').attr('cx',svg_height/2).attr('cy',svg_height/2)</span>
-<span class="sd">                         .attr('id',(d,i)=&gt;"circle-"+i)</span>
-<span class="sd">                         .attr('r',(d,i) =&gt; 25*(i+1))</span>
-<span class="sd">                              .attr('stroke','black')</span>
-<span class="sd">                              .attr('stroke-width',2)</span>
-<span class="sd">                              .attr('fill','transparent')</span>
-<span class="sd">                              .attr('stroke-dasharray',(d,i)=&gt;{return 2*3.14*25*(i+1)})</span>
-<span class="sd">                              .attr('stroke-dashoffset',(d,i)=&gt;{return 2*3.14*25*(i+1)*(1-d['profit_ratio'])})</span>
-<span class="sd">                              .style('transform', 'rotate(-180deg)')</span>
-<span class="sd">                              .style('transform-origin', '50%% 50%%')</span>
-<span class="sd">                              .on('mouseover',()=&gt;console.log(d3.event.toElement))</span>
+<span class="sd">        var circles = svg.append(&#39;g&#39;).selectAll(&#39;circle&#39;).data(data).enter()</span>
+<span class="sd">                         .append(&#39;circle&#39;).attr(&#39;cx&#39;,svg_height/2).attr(&#39;cy&#39;,svg_height/2)</span>
+<span class="sd">                         .attr(&#39;id&#39;,(d,i)=&gt;&quot;circle-&quot;+i)</span>
+<span class="sd">                         .attr(&#39;r&#39;,(d,i) =&gt; 25*(i+1))</span>
+<span class="sd">                              .attr(&#39;stroke&#39;,&#39;black&#39;)</span>
+<span class="sd">                              .attr(&#39;stroke-width&#39;,2)</span>
+<span class="sd">                              .attr(&#39;fill&#39;,&#39;transparent&#39;)</span>
+<span class="sd">                              .attr(&#39;stroke-dasharray&#39;,(d,i)=&gt;{return 2*3.14*25*(i+1)})</span>
+<span class="sd">                              .attr(&#39;stroke-dashoffset&#39;,(d,i)=&gt;{return 2*3.14*25*(i+1)*(1-d[&#39;profit_ratio&#39;])})</span>
+<span class="sd">                              .style(&#39;transform&#39;, &#39;rotate(-180deg)&#39;)</span>
+<span class="sd">                              .style(&#39;transform-origin&#39;, &#39;50%% 50%%&#39;)</span>
+<span class="sd">                              .on(&#39;mouseover&#39;,()=&gt;console.log(d3.event.toElement))</span>
 <span class="sd">                              </span>
-<span class="sd">        var circles_white = svg.append('g').selectAll('circle').data(data).enter()</span>
-<span class="sd">                         .append('circle').attr('cx',svg_height/2).attr('cy',svg_height/2)</span>
-<span class="sd">                         .attr('r',(d,i) =&gt; 25*(i+1))</span>
-<span class="sd">                              .attr('stroke','white')</span>
-<span class="sd">                              .attr('stroke-width',12)</span>
-<span class="sd">                              .attr('fill','transparent')</span>
-<span class="sd">                              .attr('stroke-dasharray',4)</span>
+<span class="sd">        var circles_white = svg.append(&#39;g&#39;).selectAll(&#39;circle&#39;).data(data).enter()</span>
+<span class="sd">                         .append(&#39;circle&#39;).attr(&#39;cx&#39;,svg_height/2).attr(&#39;cy&#39;,svg_height/2)</span>
+<span class="sd">                         .attr(&#39;r&#39;,(d,i) =&gt; 25*(i+1))</span>
+<span class="sd">                              .attr(&#39;stroke&#39;,&#39;white&#39;)</span>
+<span class="sd">                              .attr(&#39;stroke-width&#39;,12)</span>
+<span class="sd">                              .attr(&#39;fill&#39;,&#39;transparent&#39;)</span>
+<span class="sd">                              .attr(&#39;stroke-dasharray&#39;,4)</span>
 <span class="sd">        /*</span>
-<span class="sd">        var circle = svg.append('circle').attr('cx',svg_height/2).attr('cy',svg_height/2)</span>
-<span class="sd">                         .attr('r',(d,i) =&gt; 25)</span>
-<span class="sd">                              .attr('stroke','black')</span>
-<span class="sd">                              .attr('stroke-width',12)</span>
-<span class="sd">                              .attr('fill','transparent')</span>
-<span class="sd">                              .attr('stroke-dasharray',157)</span>
-<span class="sd">                              .attr('stroke-dashoffset',157*(1-0.2))</span>
-<span class="sd">                              .style('transform', 'rotate(-180deg)')</span>
-<span class="sd">                              .style('transform-origin', '50%% 50%%')</span>
+<span class="sd">        var circle = svg.append(&#39;circle&#39;).attr(&#39;cx&#39;,svg_height/2).attr(&#39;cy&#39;,svg_height/2)</span>
+<span class="sd">                         .attr(&#39;r&#39;,(d,i) =&gt; 25)</span>
+<span class="sd">                              .attr(&#39;stroke&#39;,&#39;black&#39;)</span>
+<span class="sd">                              .attr(&#39;stroke-width&#39;,12)</span>
+<span class="sd">                              .attr(&#39;fill&#39;,&#39;transparent&#39;)</span>
+<span class="sd">                              .attr(&#39;stroke-dasharray&#39;,157)</span>
+<span class="sd">                              .attr(&#39;stroke-dashoffset&#39;,157*(1-0.2))</span>
+<span class="sd">                              .style(&#39;transform&#39;, &#39;rotate(-180deg)&#39;)</span>
+<span class="sd">                              .style(&#39;transform-origin&#39;, &#39;50%% 50%%&#39;)</span>
 <span class="sd">         */</span>
 <span class="sd">    })</span>
 
-<span class="sd">"""</span><span class="o">%</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">dataJsonList</span><span class="p">))</span>
+<span class="sd">&quot;&quot;&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">dataJsonList</span><span class="p">))</span>
 
 <span class="p">)</span>
 </pre></div>
@@ -13617,16 +13617,16 @@ require.config({
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[82]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
 
 
-<div id="f6f5e935-e722-4936-882d-74e57c33e4cc"></div>
+<div id="4e760247-811c-4200-8c6b-e84e95c27360"></div>
 <div class="output_subarea output_javascript output_execute_result">
 <script type="text/javascript">
-var element = $('#f6f5e935-e722-4936-882d-74e57c33e4cc');
+var element = $('#4e760247-811c-4200-8c6b-e84e95c27360');
 
     require(['d3'],function(d3){
     
